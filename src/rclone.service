@@ -8,7 +8,7 @@ User=francois
 Group=users
 Type=simple
 ExecStart=/usr/bin/rclone rcd
-Environment=RCLONE_LOG_FILE=/tmp/rclone/log/rclone.log
+Environment=RCLONE_LOG_FILE=/data/.rclone/log/rclone.log
 EnvironmentFile=/data/config/rclone/rclone.env
 
 
