@@ -20,7 +20,7 @@ Type=simple
 User=francois
 Group=users
 EnvironmentFile=/data/config/rclone/rclone.env
-Environment=RCLONE_LOG_FILE=/data/.rclone/log/rclone-%i.log
+Environment=RCLONE_LOG_FILE=/data/rclone/log/rclone-%i.log
 ExecStart=/usr/bin/rclone mount %i: /mnt/%i
 ExecStop=/bin/fusermount -u /mnt/%i
 
